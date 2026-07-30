@@ -32,6 +32,7 @@ const projects = [
 
     github: "https://github.com/2709ChaviS/tokenpay",
     live: "https://tokenpay.vercel.app",
+    caseStudyUrl: "/work/tokenpay",
   },
 
   {
@@ -61,44 +62,16 @@ const projects = [
       "Figma",
     ],
 
-    github: "#",
-    live: "#",
+    github: "https://github.com/2709ChaviS/caregive",
+    live: "https://caregive.vercel.app/landing",
+    caseStudyUrl: "/work/caregive",
   },
 
-  {
-    id: "collabdocs",
-    number: "03",
-    title: "CollabDocs",
-    tagline: "Real-time collaborative editing powered by CRDTs.",
-
-    overview:
-      "Building a collaborative document editor inspired by Google Docs using CRDT-based synchronization.",
-
-    problem:
-      "Real-time editing requires conflict-free synchronization while supporting offline editing and reconnect states.",
-
-    highlights: [
-      "CRDT-powered synchronization",
-      "Live collaborative cursors",
-      "Presence indicators",
-      "Low-latency architecture",
-    ],
-
-    stack: [
-      "Next.js",
-      "TypeScript",
-      "Yjs",
-      "WebSockets",
-      "TipTap",
-    ],
-
-    github: "#",
-    live: "#",
-  },
+  
 
   {
     id: "medihelp",
-    number: "04",
+    number: "03",
     title: "Medihelp",
     tagline: "Simplifying healthcare appointment booking.",
 
@@ -121,13 +94,14 @@ const projects = [
       "Prototype",
     ],
 
-    github: "#",
-    live: "#",
+    Figma: "https://www.figma.com/design/pO4XprScn25pNwrmmg4VAS/Medihelp?node-id=0-1&t=IpyFlifNBySpRrHx-1",
+  
+    caseStudyUrl: "/work/medihelp",
   },
 
   {
     id: "managein",
-    number: "05",
+    number: "04",
     title: "manageIN",
     tagline: "Reimagining B2B inventory workflows.",
 
@@ -150,8 +124,9 @@ const projects = [
       "UX Research",
     ],
 
-    github: "#",
-    live: "#",
+    Figma: "https://www.figma.com/design/a5vEez2RZotIEg6amoFSDH/manageIN?node-id=0-1&t=zemSfICXynXCIoDT-1",
+    
+    caseStudyUrl: "/work/managein",
   },
 ];
 
@@ -212,8 +187,8 @@ export default function Products() {
 
                 <div>
 
-                  {project.id === "tokenpay" ? (
-                    <Link href="/work/tokenpay">
+                  {project.caseStudyUrl ? (
+                    <Link href={project.caseStudyUrl}>
                       <motion.h3
                         whileHover={{ x: 8 }}
                         className="cursor-pointer text-5xl font-bold tracking-tight transition hover:text-neutral-200"
@@ -281,10 +256,10 @@ export default function Products() {
 
                 <div className="flex flex-col items-end justify-between">
 
-                  {project.id === "tokenpay" ? (
+                  {project.caseStudyUrl ? (
 
                     <Link
-                      href="/work/tokenpay"
+                      href={project.caseStudyUrl}
                       className="rounded-full border border-white/10 px-5 py-3 text-sm uppercase tracking-[0.25em] text-neutral-300 transition hover:border-white hover:bg-white/5"
                     >
                       View Case Study →
@@ -293,36 +268,40 @@ export default function Products() {
                   ) : (
 
                     <div className="rounded-full border border-white/10 px-5 py-3 text-sm uppercase tracking-[0.25em] text-neutral-500">
-                      Coming Soon
+                      
                     </div>
 
                   )}
 
                   <div className="flex flex-col items-end gap-5">
 
-                    {project.id === "tokenpay" ? (
+                    {project.github !== "#" || project.live !== "#" ? (
                       <>
-                        <a
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-neutral-300 transition hover:text-white"
-                        >
-                          GitHub →
-                        </a>
+                        {project.github !== "#" && (
+                          <a
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-neutral-300 transition hover:text-white"
+                          >
+                            GitHub →
+                          </a>
+                        )}
 
-                        <a
-                          href={project.live}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-neutral-300 transition hover:text-white"
-                        >
-                          Live →
-                        </a>
+                        {project.live !== "#" && (
+                          <a
+                            href={project.live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-neutral-300 transition hover:text-white"
+                          >
+                            Live →
+                          </a>
+                        )}
                       </>
                     ) : (
                       <span className="text-sm uppercase tracking-[0.25em] text-neutral-600">
-                        In Progress
+                       
                       </span>
                     )}
 

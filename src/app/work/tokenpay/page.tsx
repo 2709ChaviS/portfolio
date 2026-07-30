@@ -81,7 +81,7 @@ export default function TokenPayCaseStudy() {
           <div className="mt-16 flex gap-6">
 
             <a
-              href="YOUR_LIVE_URL"
+              href="https://tokenpay-seven.vercel.app/"
               target="_blank"
               className="rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:scale-105"
             >
@@ -89,7 +89,7 @@ export default function TokenPayCaseStudy() {
             </a>
 
             <a
-              href="YOUR_GITHUB_URL"
+              href="https://github.com/2709ChaviS/tokenpay"
               target="_blank"
               className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
             >
@@ -937,7 +937,7 @@ export default function TokenPayCaseStudy() {
           <div className="mt-16 flex flex-wrap gap-6">
 
             <a
-              href="YOUR_GITHUB_URL"
+              href="https://github.com/2709ChaviS/tokenpay"
               target="_blank"
               className="rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:scale-105"
             >
@@ -945,7 +945,7 @@ export default function TokenPayCaseStudy() {
             </a>
 
             <a
-              href="YOUR_LIVE_URL"
+              href="https://tokenpay-seven.vercel.app/"
               target="_blank"
               className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
             >
@@ -996,7 +996,7 @@ export default function TokenPayCaseStudy() {
     <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
 
       <a
-        href="https://tokenpay.vercel.app"
+        href="https://tokenpay-seven.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
         className="group inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-7 py-3 font-medium text-primary-foreground transition hover:scale-105"

@@ -1,0 +1,265 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Image from "next/image";
+
+const flowScreens = [
+  { src: "/managein/add-product.png", label: "Add Product" },
+  { src: "/managein/add-variants.png", label: "Add Variants" },
+  { src: "/managein/variant-details.png", label: "Variant Details" },
+  { src: "/managein/bulk-edit.png", label: "Bulk Edit" },
+  { src: "/managein/edit-variants.png", label: "Edit Variants" },
+  { src: "/managein/product-saved.png", label: "Product Saved" },
+];
+
+const FIGMA_LINK = "https://www.figma.com/design/a5vEez2RZotIEg6amoFSDH/manageIN?node-id=0-1&t=U6bqBKPiqXRCreox-1";
+
+function ScreenRow({ screens }: { screens: { src: string; label: string }[] }) {
+  return (
+    <div className="mt-16 grid grid-cols-1 gap-14 sm:grid-cols-2 lg:grid-cols-3">
+      {screens.map((s, i) => (
+        <motion.div
+          key={s.src}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: i * 0.08 }}
+          className="group mx-auto w-full max-w-[280px]"
+        >
+          <div className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.02] p-3">
+            <Image
+              src={s.src}
+              alt={s.label}
+              width={0}
+              height={0}
+              sizes="280px"
+              unoptimized
+              className="h-auto w-full rounded-2xl transition duration-500 group-hover:scale-[1.03]"
+            />
+          </div>
+          <p className="mt-5 text-center text-sm uppercase tracking-[0.2em] text-neutral-500">
+            {s.label}
+          </p>
+        </motion.div>
+      ))}
+    </div>
+  );
+}
+
+export default function ManageInCaseStudy() {
+  return (
+    <main className="bg-[#050505] text-white">
+
+      {/* HERO */}
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-8 pt-40 pb-32">
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="text-xs uppercase tracking-[0.45em] text-neutral-500"
+          >
+            CASE STUDY / UX DESIGN
+          </motion.p>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="mt-8 text-[100px] font-black leading-[0.88] tracking-tight"
+          >
+            manageIN
+          </motion.h1>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="mt-3 max-w-4xl text-5xl font-semibold leading-tight text-neutral-300"
+          >
+            Reimagining B2B
+            <br />
+            inventory workflows.
+          </motion.h2>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="mt-10 max-w-3xl text-xl leading-10 text-neutral-400"
+          >
+            A redesign of Modulus Sell's billing and inventory platform,
+            focused on clarity and power-user efficiency for daily catalog
+            operations.
+          </motion.p>
+
+          <div className="mt-16 flex flex-wrap gap-4">
+            {["Figma", "Design System", "UX Research"].map((t) => (
+              <div
+                key={t}
+                className="rounded-full border border-white/10 bg-white/[0.03] px-5 py-3 text-sm text-neutral-300"
+              >
+                {t}
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-16">
+            <a
+              href="https://www.figma.com/design/a5vEez2RZotIEg6amoFSDH/manageIN?node-id=0-1&t=U6bqBKPiqXRCreox-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
+            >
+              View Figma Prototype →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* PROBLEM */}
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-8 py-32">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-xs uppercase tracking-[0.45em] text-neutral-500"
+          >
+            THE PROBLEM
+          </motion.p>
+
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-8 max-w-5xl text-6xl font-black leading-[0.95]"
+          >
+            Too many steps between
+            <br />
+            "add product" and "done."
+          </motion.h2>
+
+          <p className="mt-12 max-w-3xl text-xl leading-10 text-neutral-400">
+            Existing workflows introduced unnecessary navigation and visual
+            complexity for daily operations — adding a product with multiple
+            size and color variants meant repeating the same steps for every
+            single combination.
+          </p>
+        </div>
+      </section>
+
+      {/* IA / VISION */}
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-8 py-32">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-xs uppercase tracking-[0.45em] text-neutral-500"
+          >
+            REDESIGN FOCUS
+          </motion.p>
+
+          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+            Bulk actions,
+            <br />
+            not repeated ones.
+          </h2>
+
+          <p className="mt-8 max-w-3xl text-xl leading-10 text-neutral-400">
+            Information architecture was restructured around the power-user's
+            actual task: generating and editing many variants of one product
+            at once, instead of navigating each variant individually.
+          </p>
+
+          <div className="mt-20 grid gap-8 md:grid-cols-3">
+            {[
+              { title: "Information Architecture", body: "Reorganized navigation so variant management sits one level deep, not buried in nested menus." },
+              { title: "Power-User Dashboard", body: "Bulk edit surfaces price and stock changes across all selected variants in a single view." },
+              { title: "Scalable Design System", body: "Consistent components across product, variant, and inventory screens reduce relearning." },
+            ].map((item, i) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className="rounded-3xl border border-white/10 bg-white/[0.02] p-10"
+              >
+                <h3 className="text-2xl font-semibold">{item.title}</h3>
+                <p className="mt-4 leading-8 text-neutral-400">{item.body}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SCREENS WALKTHROUGH */}
+      <section className="border-b border-white/10">
+        <div className="mx-auto max-w-7xl px-8 py-32">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-xs uppercase tracking-[0.45em] text-neutral-500"
+          >
+            THE WORKFLOW
+          </motion.p>
+
+          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+            From one product to
+            <br />
+            six variants, in one flow.
+          </h2>
+
+          <p className="mt-8 max-w-3xl text-xl leading-10 text-neutral-400">
+            Adding a product flows directly into generating its variants,
+            editing them in bulk, and confirming the save — without leaving
+            the product context.
+          </p>
+
+          <ScreenRow screens={flowScreens} />
+        </div>
+      </section>
+
+      {/* REFLECTION */}
+      <section>
+        <div className="mx-auto max-w-7xl px-8 py-32">
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-xs uppercase tracking-[0.45em] text-neutral-500"
+          >
+            REFLECTION
+          </motion.p>
+
+          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+            What this project taught me.
+          </h2>
+
+          <p className="mt-8 max-w-3xl text-xl leading-10 text-neutral-400">
+            Designing for power users means optimizing for repetition — the
+            same action done dozens of times a day deserves a bulk path, not
+            just a clean single-item form.
+          </p>
+
+          <div className="mt-16 flex flex-wrap gap-6">
+            <a
+              href="https://www.figma.com/design/a5vEez2RZotIEg6amoFSDH/manageIN?node-id=0-1&t=U6bqBKPiqXRCreox-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:scale-105"
+            >
+              View Figma Prototype
+            </a>
+            <a href="/" className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5">
+              Back to Home
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  );
+}
