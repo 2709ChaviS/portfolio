@@ -13,13 +13,8 @@ export default function Navbar() {
           CHAVI SHARMA
         </Link>
 
-        <nav className="flex items-center gap-12 text-[17px] text-neutral-400">
-          <a href="#">Products</a>
-          <a href="#">Thinking</a>
-          <a href="#">Engineering</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </nav>
+       
+        
       </div>
     </header>
   );
