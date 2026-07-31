@@ -75,7 +75,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1u0pfyR_UgsQ1tLw7SFvUhTtwN67HCHET/view?usp=sharing"
+              href="https://drive.google.com/file/d/17a-1dP4QhVoTmiqBAAMyDkqAhVyQGCpQ/view?usp=sharing"
               target="_blank"
               className="text-2xl transition hover:text-neutral-300"
             >

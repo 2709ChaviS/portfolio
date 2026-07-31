@@ -57,8 +57,15 @@ export default function Dashboard() {
           </p>
 
           <h2 className="mt-3 text-5xl font-bold text-white">
-            TokenPay
+            TokenPay 
           </h2>
+          <a
+              href="https://tokenpay-seven.vercel.app/"
+              target="_blank"
+              className="rounded-xl border border-white/5 px-1 py-1 transition hover:bg-white/5"
+            >
+              Live link
+            </a>
 
           <p className="mt-5 max-w-xl text-lg leading-8 text-neutral-400">
             An invoicing workflow designed for Indian freelancers.

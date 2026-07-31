@@ -67,11 +67,10 @@ const projects = [
     caseStudyUrl: "/work/caregive",
   },
 
-  
-
+ 
   {
     id: "medihelp",
-    number: "03",
+    number: "04",
     title: "Medihelp",
     tagline: "Simplifying healthcare appointment booking.",
 
@@ -94,14 +93,15 @@ const projects = [
       "Prototype",
     ],
 
-    Figma: "https://www.figma.com/design/pO4XprScn25pNwrmmg4VAS/Medihelp?node-id=0-1&t=IpyFlifNBySpRrHx-1",
-  
+    github: "#",
+    live: "#",
+    figmaLink: "https://www.figma.com/design/pO4XprScn25pNwrmmg4VAS/Medihelp?node-id=0-1&t=SkIGP3EoGdAQSOyA-1",
     caseStudyUrl: "/work/medihelp",
   },
 
   {
     id: "managein",
-    number: "04",
+    number: "05",
     title: "manageIN",
     tagline: "Reimagining B2B inventory workflows.",
 
@@ -124,8 +124,9 @@ const projects = [
       "UX Research",
     ],
 
-    Figma: "https://www.figma.com/design/a5vEez2RZotIEg6amoFSDH/manageIN?node-id=0-1&t=zemSfICXynXCIoDT-1",
-    
+    github: "#",
+    live: "#",
+    figmaLink: "https://www.figma.com/design/a5vEez2RZotIEg6amoFSDH/manageIN?node-id=0-1&t=PibnEVY7eSy62rUY-1",
     caseStudyUrl: "/work/managein",
   },
 ];
@@ -268,14 +269,23 @@ export default function Products() {
                   ) : (
 
                     <div className="rounded-full border border-white/10 px-5 py-3 text-sm uppercase tracking-[0.25em] text-neutral-500">
-                      
+                      Coming Soon
                     </div>
 
                   )}
 
                   <div className="flex flex-col items-end gap-5">
 
-                    {project.github !== "#" || project.live !== "#" ? (
+                    {project.figmaLink ? (
+                      <a
+                        href={project.figmaLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-neutral-300 transition hover:text-white"
+                      >
+                        Figma →
+                      </a>
+                    ) : project.github !== "#" || project.live !== "#" ? (
                       <>
                         {project.github !== "#" && (
                           <a
@@ -301,7 +311,7 @@ export default function Products() {
                       </>
                     ) : (
                       <span className="text-sm uppercase tracking-[0.25em] text-neutral-600">
-                       
+                        In Progress
                       </span>
                     )}
 
