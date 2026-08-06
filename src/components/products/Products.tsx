@@ -31,7 +31,7 @@ const projects = [
     ],
 
     github: "https://github.com/2709ChaviS/tokenpay",
-    live: "https://tokenpay.vercel.app",
+    live: "https://tokenpay-seven.vercel.app/",
     caseStudyUrl: "/work/tokenpay",
   },
 
