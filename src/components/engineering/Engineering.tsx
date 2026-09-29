@@ -19,13 +19,15 @@ const capabilities = [
   {
     title: "Backend Systems",
     description:
-      "Designing secure backend workflows with Supabase, authentication, relational database design and business logic that supports real-world product requirements.",
+      "Designing secure backend workflows with Supabase, Razorpay payments, Row-Level Security, relational database design and real-time sync over WebSockets that support real-world product requirements.",
     technologies: [
       "Supabase",
       "PostgreSQL",
       "Authentication",
       "Row Level Security",
       "REST APIs",
+      "WebSockets",
+      "Razorpay",
     ],
   },
 

@@ -19,7 +19,8 @@ const projects = [
       "Token-based milestone approval workflow",
       "One-click client approval using magic links",
       "Automatic GST calculation",
-      "End-to-end product ownership from research to deployment",
+      "Razorpay payments with server-side HMAC signature verification",
+      "Row-Level Security across 7+ tables for multi-tenant data isolation",
     ],
 
     stack: [
@@ -27,6 +28,7 @@ const projects = [
       "TypeScript",
       "Supabase",
       "PostgreSQL",
+      "Razorpay",
       "Tailwind CSS",
     ],
 
@@ -36,8 +38,72 @@ const projects = [
   },
 
   {
-    id: "caregive",
+    id: "job-hunt-agent",
     number: "02",
+    title: "Job Hunt Agent",
+    tagline: "An automation agent that hunts fresher jobs for me.",
+
+    overview:
+      "A Python agent that pulls fresh listings from 5 sources, filters them, and ranks each one against my resume with TF-IDF similarity.",
+
+    problem:
+      "Fresher job hunting means checking many boards daily and sorting through irrelevant, senior, or stale listings.",
+
+    highlights: [
+      "Aggregates 5 job sources, Delhi NCR and remote",
+      "3-stage filter: seniority, location, freshness",
+      "TF-IDF cosine ranking against my parsed resume (0-100%)",
+      "Offline dashboard with 5-stage application tracker",
+    ],
+
+    stack: [
+      "Python",
+      "scikit-learn",
+      "pypdf",
+      "JavaScript",
+      "HTML/CSS",
+    ],
+
+    github: "https://github.com/2709ChaviS/job_hunt_agent",
+    live: "#",
+    caseStudyUrl: "/work/job-hunt-agent",
+  },
+
+  {
+    id: "collabdocs",
+    number: "03",
+    title: "CollabDocs",
+    tagline: "Real-time collaborative writing, without conflicts.",
+
+    overview:
+      "A Google Docs-style editor where multiple people write in the same document at once, with live cursors and instant sync.",
+
+    problem:
+      "Simultaneous edits usually overwrite each other, and connection drops make it worse. Collaboration needs to stay consistent even offline.",
+
+    highlights: [
+      "Conflict-free multi-user sync using Yjs (CRDT)",
+      "Live presence: colored cursors and active-user indicators",
+      "Handles offline and reconnect states",
+      "Standalone Node.js WebSocket sync service",
+    ],
+
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "Yjs",
+      "WebSockets",
+      "Node.js",
+    ],
+
+    github: "https://github.com/2709ChaviS/collabdocs",
+    live: "https://collabdocs-inky.vercel.app",
+    caseStudyUrl: "/work/collabdocs",
+  },
+
+  {
+    id: "caregive",
+    number: "04",
     title: "Caregive",
     tagline: "Designing trust into caregiver booking.",
 
@@ -65,38 +131,6 @@ const projects = [
     github: "https://github.com/2709ChaviS/caregive",
     live: "https://caregive.vercel.app/landing",
     caseStudyUrl: "/work/caregive",
-  },
-
- 
-  {
-    id: "medihelp",
-    number: "04",
-    title: "Medihelp",
-    tagline: "Simplifying healthcare appointment booking.",
-
-    overview:
-      "A UX case study focused on reducing friction in clinic discovery and appointment scheduling.",
-
-    problem:
-      "Healthcare booking experiences are cluttered and require unnecessary steps before confirmation.",
-
-    highlights: [
-      "Competitive UX research",
-      "20+ screen prototype",
-      "Reusable design system",
-      "Interaction design",
-    ],
-
-    stack: [
-      "Figma",
-      "UX Research",
-      "Prototype",
-    ],
-
-    github: "#",
-    live: "#",
-    figmaLink: "https://www.figma.com/design/pO4XprScn25pNwrmmg4VAS/Medihelp?node-id=0-1&t=SkIGP3EoGdAQSOyA-1",
-    caseStudyUrl: "/work/medihelp",
   },
 
   {
@@ -128,6 +162,37 @@ const projects = [
     live: "#",
     figmaLink: "https://www.figma.com/design/a5vEez2RZotIEg6amoFSDH/manageIN?node-id=0-1&t=PibnEVY7eSy62rUY-1",
     caseStudyUrl: "/work/managein",
+  },
+
+  {
+    id: "medihelp",
+    number: "06",
+    title: "Medihelp",
+    tagline: "Simplifying healthcare appointment booking.",
+
+    overview:
+      "A UX case study focused on reducing friction in clinic discovery and appointment scheduling.",
+
+    problem:
+      "Healthcare booking experiences are cluttered and require unnecessary steps before confirmation.",
+
+    highlights: [
+      "Competitive UX research",
+      "20+ screen prototype",
+      "Reusable design system",
+      "Interaction design",
+    ],
+
+    stack: [
+      "Figma",
+      "UX Research",
+      "Prototype",
+    ],
+
+    github: "#",
+    live: "#",
+    figmaLink: "https://www.figma.com/design/pO4XprScn25pNwrmmg4VAS/Medihelp?node-id=0-1&t=SkIGP3EoGdAQSOyA-1",
+    caseStudyUrl: "/work/medihelp",
   },
 ];
 
@@ -265,6 +330,10 @@ export default function Products() {
                     >
                       View Case Study →
                     </Link>
+
+                  ) : project.github !== "#" || project.live !== "#" ? (
+
+                    <div />
 
                   ) : (
 

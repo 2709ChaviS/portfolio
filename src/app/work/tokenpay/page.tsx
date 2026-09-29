@@ -64,6 +64,7 @@ export default function TokenPayCaseStudy() {
               "TypeScript",
               "Supabase",
               "PostgreSQL",
+              "Razorpay",
               "Tailwind CSS",
             ].map((tech)=>(
 
@@ -746,18 +747,14 @@ export default function TokenPayCaseStudy() {
           </h2>
 
           <p className="mt-8 max-w-3xl text-xl leading-10 text-neutral-400">
-            The current version validates the core invoicing workflow. Future
-            iterations focus on payments, document generation and communication
-            automation.
+            The current version validates the core invoicing workflow and
+            already collects payments through Razorpay. Future iterations focus
+            on document generation and communication automation.
           </p>
 
           <div className="mt-20 space-y-8">
 
             {[
-              {
-                title: "Razorpay Integration",
-                body: "Allow clients to complete payments directly from generated invoices."
-              },
               {
                 title: "PDF Invoice Export",
                 body: "Generate downloadable GST-ready invoices for record keeping and sharing."
@@ -890,6 +887,7 @@ export default function TokenPayCaseStudy() {
               "TypeScript",
               "Supabase",
               "PostgreSQL",
+              "Razorpay",
               "Tailwind CSS",
               "Framer Motion",
               "Vercel"
@@ -1073,4 +1071,3 @@ export default function TokenPayCaseStudy() {
 </main>
 )
 }
-
