@@ -1,11 +1,17 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
-const COLORS = ["bg-violet-600/25", "bg-pink-500/20", "bg-orange-500/15"];
+// Radial gradients instead of blur filters: looks the same, far cheaper to paint.
+const COLORS = [
+  "rgba(139,92,246,0.28)",
+  "rgba(236,72,153,0.22)",
+  "rgba(249,115,22,0.16)",
+];
 
-// Each blob: vertical position (%), side, and drift speed.
 export default function GradientBlobs({ count = 3 }: { count?: number }) {
+  const reduce = useReducedMotion();
+
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
       {Array.from({ length: count }).map((_, i) => {
@@ -13,19 +19,20 @@ export default function GradientBlobs({ count = 3 }: { count?: number }) {
         return (
           <motion.div
             key={i}
-            animate={{
-              x: left ? [0, 60, 0] : [0, -60, 0],
-              y: [0, 50, 0],
-            }}
+            animate={reduce ? undefined : { x: left ? [0, 50, 0] : [0, -50, 0] }}
             transition={{
-              duration: 11 + (i % 3) * 2,
+              duration: 16 + (i % 3) * 3,
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            style={{ top: `${(i / count) * 100}%` }}
-            className={`absolute h-[450px] w-[450px] rounded-full blur-[140px] ${
-              left ? "-left-40" : "-right-40"
-            } ${COLORS[i % COLORS.length]}`}
+            style={{
+              top: `${(i / count) * 100}%`,
+              background: `radial-gradient(circle, ${COLORS[i % COLORS.length]} 0%, transparent 65%)`,
+              willChange: "transform",
+            }}
+            className={`absolute h-[520px] w-[520px] rounded-full ${
+              left ? "-left-48" : "-right-48"
+            }`}
           />
         );
       })}

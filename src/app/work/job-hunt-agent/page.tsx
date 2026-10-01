@@ -52,7 +52,7 @@ export default function JobHuntAgentCaseStudy() {
 
       {/* HERO */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 pt-40 pb-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 pt-32 md:pt-40 pb-32">
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -65,7 +65,7 @@ export default function JobHuntAgentCaseStudy() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="mt-8 text-[100px] font-black leading-[0.88] tracking-tight"
+            className="mt-8 text-[44px] sm:text-[80px] lg:text-[100px] font-black leading-[0.88] tracking-tight"
           >
             Job Hunt Agent
           </motion.h1>
@@ -74,7 +74,7 @@ export default function JobHuntAgentCaseStudy() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="mt-3 max-w-4xl text-5xl font-semibold leading-tight text-neutral-300"
+            className="mt-3 max-w-4xl text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-neutral-300"
           >
             An agent that hunts
             <br />
@@ -108,7 +108,7 @@ export default function JobHuntAgentCaseStudy() {
               href={GITHUB}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:scale-105"
+              className="rounded-xl bg-white px-5 sm:px-8 py-4 font-semibold text-black transition hover:scale-105"
             >
               GitHub
             </a>
@@ -118,12 +118,12 @@ export default function JobHuntAgentCaseStudy() {
 
       {/* PROBLEM */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <p className="text-xs uppercase tracking-[0.45em] text-neutral-500">
             THE PROBLEM
           </p>
 
-          <h2 className="mt-8 max-w-5xl text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 max-w-5xl text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             Job hunting is mostly
             <br />
             scrolling, not applying.
@@ -141,7 +141,7 @@ export default function JobHuntAgentCaseStudy() {
                 key={n.label}
                 className="rounded-3xl border border-white/10 bg-white/[0.02] p-8"
               >
-                <p className="text-6xl font-black">{n.value}</p>
+                <p className="text-3xl sm:text-5xl lg:text-6xl font-black">{n.value}</p>
                 <p className="mt-3 text-sm uppercase tracking-[0.2em] text-neutral-500">
                   {n.label}
                 </p>
@@ -153,12 +153,12 @@ export default function JobHuntAgentCaseStudy() {
 
       {/* PIPELINE */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <p className="text-xs uppercase tracking-[0.45em] text-neutral-500">
             HOW IT WORKS
           </p>
 
-          <h2 className="mt-8 text-6xl font-black">The pipeline.</h2>
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black">The pipeline.</h2>
 
           <div className="mt-20 space-y-8">
             {pipeline.map((item, i) => (
@@ -167,13 +167,13 @@ export default function JobHuntAgentCaseStudy() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="flex gap-10 rounded-3xl border border-white/10 bg-white/[0.02] p-10"
+                className="flex flex-col md:flex-row gap-4 md:gap-10 rounded-3xl border border-white/10 bg-white/[0.02] p-6 md:p-10"
               >
-                <span className="text-5xl font-black text-neutral-700">
+                <span className="text-3xl sm:text-4xl lg:text-5xl font-black text-neutral-700">
                   0{i + 1}
                 </span>
                 <div>
-                  <h3 className="text-3xl font-semibold">{item.title}</h3>
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold">{item.title}</h3>
                   <p className="mt-5 max-w-3xl text-lg leading-9 text-neutral-400">
                     {item.body}
                   </p>
@@ -186,12 +186,12 @@ export default function JobHuntAgentCaseStudy() {
 
       {/* DASHBOARD */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <p className="text-xs uppercase tracking-[0.45em] text-neutral-500">
             TRACKING
           </p>
 
-          <h2 className="mt-8 max-w-5xl text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 max-w-5xl text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             From listing to
             <br />
             application, in one place.
@@ -213,8 +213,8 @@ export default function JobHuntAgentCaseStudy() {
 
       {/* CLOSING */}
       <section>
-        <div className="mx-auto max-w-7xl px-8 py-32">
-          <h2 className="max-w-5xl text-7xl font-black leading-[0.9]">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
+          <h2 className="max-w-5xl text-4xl sm:text-6xl lg:text-7xl font-black leading-[0.9]">
             Automate the search,
             <br />
             spend time
@@ -227,13 +227,13 @@ export default function JobHuntAgentCaseStudy() {
               href={GITHUB}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:scale-105"
+              className="rounded-xl bg-white px-5 sm:px-8 py-4 font-semibold text-black transition hover:scale-105"
             >
               View Source Code
             </a>
             <a
               href="/"
-              className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
+              className="rounded-xl border border-white/10 px-5 sm:px-8 py-4 transition hover:bg-white/5"
             >
               Back to Home
             </a>

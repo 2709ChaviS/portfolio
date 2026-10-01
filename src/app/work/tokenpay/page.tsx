@@ -10,7 +10,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="relative overflow-hidden border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 pt-40 pb-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 pt-32 md:pt-40 pb-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -24,7 +24,7 @@ export default function TokenPayCaseStudy() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: .7 }}
-            className="mt-8 text-[110px] font-black leading-[0.88] tracking-tight"
+            className="mt-8 text-[44px] sm:text-[80px] lg:text-[110px] font-black leading-[0.88] tracking-tight"
           >
             TokenPay
           </motion.h1>
@@ -36,7 +36,7 @@ export default function TokenPayCaseStudy() {
               duration: .7,
               delay: .1
             }}
-            className="mt-3 max-w-5xl text-5xl font-semibold leading-tight text-neutral-300"
+            className="mt-3 max-w-5xl text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-neutral-300"
           >
             Milestone-first invoicing
             <br />
@@ -84,7 +84,7 @@ export default function TokenPayCaseStudy() {
             <a
               href="https://tokenpay-seven.vercel.app/"
               target="_blank"
-              className="rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:scale-105"
+              className="rounded-xl bg-white px-5 sm:px-8 py-4 font-semibold text-black transition hover:scale-105"
             >
               Live Demo
             </a>
@@ -92,7 +92,7 @@ export default function TokenPayCaseStudy() {
             <a
               href="https://github.com/2709ChaviS/tokenpay"
               target="_blank"
-              className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
+              className="rounded-xl border border-white/10 px-5 sm:px-8 py-4 transition hover:bg-white/5"
             >
               GitHub
             </a>
@@ -107,7 +107,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -123,7 +123,7 @@ export default function TokenPayCaseStudy() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mt-8 max-w-5xl text-6xl font-black leading-[0.95]"
+            className="mt-8 max-w-5xl text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]"
           >
             Freelancers don't struggle
             <br />
@@ -185,7 +185,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -196,7 +196,7 @@ export default function TokenPayCaseStudy() {
             EXISTING WORKFLOW
           </motion.p>
 
-          <h2 className="mt-8 text-5xl font-black">
+          <h2 className="mt-8 text-3xl sm:text-4xl lg:text-5xl font-black">
             Fragmented workflow.
           </h2>
 
@@ -224,7 +224,7 @@ export default function TokenPayCaseStudy() {
                 transition={{
                   delay: index * 0.08,
                 }}
-                className="rounded-2xl border border-white/10 px-8 py-6 text-lg text-neutral-300"
+                className="rounded-2xl border border-white/10 px-5 sm:px-8 py-6 text-lg text-neutral-300"
               >
                 {item}
               </motion.div>
@@ -240,7 +240,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -251,7 +251,7 @@ export default function TokenPayCaseStudy() {
             PRODUCT VISION
           </motion.p>
 
-          <h2 className="mt-8 max-w-5xl text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 max-w-5xl text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             Replace fragmented tools
             <br />
             with one structured workflow.
@@ -276,12 +276,12 @@ export default function TokenPayCaseStudy() {
                 key={item}
                 className="flex items-center gap-6"
               >
-                <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-8 py-6 text-xl font-medium">
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 sm:px-8 py-6 text-xl font-medium">
                   {item}
                 </div>
 
                 {index !== 3 && (
-                  <span className="text-3xl text-neutral-700">
+                  <span className="text-xl sm:text-2xl lg:text-3xl text-neutral-700">
                     →
                   </span>
                 )}
@@ -298,7 +298,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -313,7 +313,7 @@ export default function TokenPayCaseStudy() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-8 text-6xl font-black leading-[0.95]"
+            className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]"
           >
             The workflow.
           </motion.h2>
@@ -331,7 +331,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-20 px-8 py-28">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 px-5 sm:px-8 py-28">
 
           <div>
 
@@ -339,7 +339,7 @@ export default function TokenPayCaseStudy() {
               STEP 01
             </p>
 
-            <h3 className="mt-6 text-5xl font-bold">
+            <h3 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold">
               Project Workspace
             </h3>
 
@@ -351,7 +351,7 @@ export default function TokenPayCaseStudy() {
 
           </div>
 
-          <div className="rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-12">
+          <div className="rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-6 md:p-12">
 
             <div className="space-y-5">
 
@@ -383,7 +383,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-20 px-8 py-28">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 px-5 sm:px-8 py-28">
 
           <div className="order-2">
 
@@ -391,7 +391,7 @@ export default function TokenPayCaseStudy() {
               STEP 02
             </p>
 
-            <h3 className="mt-6 text-5xl font-bold">
+            <h3 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold">
               Client Management
             </h3>
 
@@ -402,7 +402,7 @@ export default function TokenPayCaseStudy() {
 
           </div>
 
-          <div className="order-1 rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-12">
+          <div className="order-1 rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-6 md:p-12">
 
             <div className="space-y-4">
 
@@ -430,7 +430,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-20 px-8 py-28">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 px-5 sm:px-8 py-28">
 
           <div>
 
@@ -438,7 +438,7 @@ export default function TokenPayCaseStudy() {
               STEP 03
             </p>
 
-            <h3 className="mt-6 text-5xl font-bold">
+            <h3 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold">
               Milestone Planning
             </h3>
 
@@ -449,7 +449,7 @@ export default function TokenPayCaseStudy() {
 
           </div>
 
-          <div className="rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-10">
+          <div className="rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-6 md:p-10">
 
             <div className="space-y-6">
 
@@ -480,7 +480,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-20 px-8 py-28">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 px-5 sm:px-8 py-28">
 
           <div className="order-2">
 
@@ -488,7 +488,7 @@ export default function TokenPayCaseStudy() {
               STEP 04
             </p>
 
-            <h3 className="mt-6 text-5xl font-bold">
+            <h3 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold">
               Client Approval
             </h3>
 
@@ -500,7 +500,7 @@ export default function TokenPayCaseStudy() {
 
           </div>
 
-          <div className="order-1 rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-12">
+          <div className="order-1 rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-6 md:p-12">
 
             <div className="rounded-2xl border border-green-500/20 bg-green-500/10 p-8">
 
@@ -529,7 +529,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -540,7 +540,7 @@ export default function TokenPayCaseStudy() {
             TECHNICAL ARCHITECTURE
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             Designed around a
             <br />
             relational data model.
@@ -565,12 +565,12 @@ export default function TokenPayCaseStudy() {
                 key={item}
                 className="flex items-center gap-5"
               >
-                <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-8 py-6">
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 sm:px-8 py-6">
                   {item}
                 </div>
 
                 {index !== 4 && (
-                  <span className="text-3xl text-neutral-700">
+                  <span className="text-xl sm:text-2xl lg:text-3xl text-neutral-700">
                     →
                   </span>
                 )}
@@ -587,7 +587,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -598,11 +598,11 @@ export default function TokenPayCaseStudy() {
             DATABASE DESIGN
           </motion.p>
 
-          <h2 className="mt-8 text-5xl font-black">
+          <h2 className="mt-8 text-3xl sm:text-4xl lg:text-5xl font-black">
             Relational structure.
           </h2>
 
-          <div className="mt-20 rounded-[32px] border border-white/10 bg-white/[0.02] p-10">
+          <div className="mt-20 rounded-[32px] border border-white/10 bg-white/[0.02] p-6 md:p-10">
 
             <div className="grid gap-8 md:grid-cols-2">
 
@@ -666,7 +666,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -677,7 +677,7 @@ export default function TokenPayCaseStudy() {
             ENGINEERING DECISIONS
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             Decisions made
             <br />
             during development.
@@ -706,10 +706,10 @@ export default function TokenPayCaseStudy() {
 
               <div
                 key={item.title}
-                className="rounded-3xl border border-white/10 p-10"
+                className="rounded-3xl border border-white/10 p-6 md:p-10"
               >
 
-                <h3 className="text-3xl font-semibold">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold">
                   {item.title}
                 </h3>
 
@@ -731,7 +731,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -742,7 +742,7 @@ export default function TokenPayCaseStudy() {
             PRODUCT ROADMAP
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             Planned improvements.
           </h2>
 
@@ -770,10 +770,10 @@ export default function TokenPayCaseStudy() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="rounded-3xl border border-white/10 bg-white/[0.02] p-10"
+                className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 md:p-10"
               >
 
-                <h3 className="text-3xl font-semibold">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold">
                   {item.title}
                 </h3>
 
@@ -795,7 +795,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -806,13 +806,13 @@ export default function TokenPayCaseStudy() {
             REFLECTION
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             What this project taught me.
           </h2>
 
           <div className="mt-20 grid gap-8 md:grid-cols-3">
 
-            <div className="rounded-3xl border border-white/10 p-10">
+            <div className="rounded-3xl border border-white/10 p-6 md:p-10">
 
               <h3 className="text-2xl font-semibold">
                 Product Thinking
@@ -826,7 +826,7 @@ export default function TokenPayCaseStudy() {
 
             </div>
 
-            <div className="rounded-3xl border border-white/10 p-10">
+            <div className="rounded-3xl border border-white/10 p-6 md:p-10">
 
               <h3 className="text-2xl font-semibold">
                 System Design
@@ -840,7 +840,7 @@ export default function TokenPayCaseStudy() {
 
             </div>
 
-            <div className="rounded-3xl border border-white/10 p-10">
+            <div className="rounded-3xl border border-white/10 p-6 md:p-10">
 
               <h3 className="text-2xl font-semibold">
                 End-to-End Ownership
@@ -864,7 +864,7 @@ export default function TokenPayCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -875,7 +875,7 @@ export default function TokenPayCaseStudy() {
             TECHNOLOGY
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black">
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black">
             Built with.
           </h2>
 
@@ -912,13 +912,13 @@ export default function TokenPayCaseStudy() {
 
       <section>
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="max-w-5xl text-7xl font-black leading-[0.9]"
+            className="max-w-5xl text-4xl sm:text-6xl lg:text-7xl font-black leading-[0.9]"
           >
             Building products
             <br />
@@ -937,7 +937,7 @@ export default function TokenPayCaseStudy() {
             <a
               href="https://github.com/2709ChaviS/tokenpay"
               target="_blank"
-              className="rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:scale-105"
+              className="rounded-xl bg-white px-5 sm:px-8 py-4 font-semibold text-black transition hover:scale-105"
             >
               View Source Code
             </a>
@@ -945,14 +945,14 @@ export default function TokenPayCaseStudy() {
             <a
               href="https://tokenpay-seven.vercel.app/"
               target="_blank"
-              className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
+              className="rounded-xl border border-white/10 px-5 sm:px-8 py-4 transition hover:bg-white/5"
             >
               Live Demo
             </a>
 
             <a
               href="/"
-              className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
+              className="rounded-xl border border-white/10 px-5 sm:px-8 py-4 transition hover:bg-white/5"
             >
               Back to Home
             </a>
@@ -967,7 +967,7 @@ export default function TokenPayCaseStudy() {
     FOOTER / CLOSING SECTION
 ========================= */}
 
-<section className="relative overflow-hidden py-32 px-6">
+<section className="relative overflow-hidden py-20 md:py-32 px-6">
   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
 
   <div className="relative mx-auto max-w-5xl text-center">
@@ -977,7 +977,7 @@ export default function TokenPayCaseStudy() {
       Built with Next.js · Supabase · TypeScript
     </div>
 
-    <h2 className="text-4xl font-semibold tracking-tight sm:text-6xl">
+    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight sm:text-6xl">
       Built for freelancers who want
       <br />
       <span className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 bg-clip-text text-transparent">

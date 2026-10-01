@@ -5,10 +5,10 @@ import GradientBlobs from "../ui/GradientBlobs";
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden border-t border-white/10 bg-[#050505] py-32 text-white">
+    <footer className="relative overflow-hidden border-t border-white/10 bg-[#050505] py-20 md:py-32 text-white">
 
-      <GradientBlobs count={3} />
-      <div className="relative z-10 mx-auto max-w-7xl px-8">
+      <GradientBlobs count={2} />
+      <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -21,7 +21,7 @@ export default function Footer() {
             CONTACT
           </p>
 
-          <h2 className="mt-8 max-w-5xl text-7xl font-black leading-[0.92] tracking-tight">
+          <h2 className="mt-8 max-w-5xl text-4xl sm:text-6xl lg:text-7xl font-black leading-[0.92] tracking-tight">
 
             Building products
             <br />
@@ -41,7 +41,7 @@ export default function Footer() {
 
         </motion.div>
 
-        <div className="mt-24 grid gap-12 border-t border-white/10 pt-16 md:grid-cols-2">
+        <div className="mt-24 grid gap-6 md:gap-12 border-t border-white/10 pt-16 md:grid-cols-2">
 
           <div>
 
@@ -51,7 +51,7 @@ export default function Footer() {
 
             <a
               href="mailto:chavisharma977@gmail.com"
-              className="block text-3xl font-semibold transition hover:text-fuchsia-300"
+              className="block break-all text-xl sm:text-2xl lg:text-3xl font-semibold transition hover:text-fuchsia-300"
             >
               chavisharma977@gmail.com
             </a>
@@ -90,7 +90,7 @@ export default function Footer() {
 
         <div className="mt-24 border-t border-white/10 pt-10">
 
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col items-start gap-3 md:flex-row md:items-center md:justify-between">
 
             <p className="text-sm text-neutral-600">
               © 2026 Chavi Sharma

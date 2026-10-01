@@ -201,10 +201,10 @@ export default function Products() {
   return (
     <section
       id="work"
-      className="relative overflow-hidden bg-[#050505] py-40 text-white"
+      className="relative overflow-hidden bg-[#050505] py-24 md:py-40 text-white"
     >
-      <GradientBlobs count={6} />
-      <div className="relative z-10 mx-auto max-w-7xl px-8">
+      <GradientBlobs count={4} />
+      <div className="relative z-10 mx-auto max-w-7xl px-5 sm:px-8">
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -216,7 +216,7 @@ export default function Products() {
             Selected Work
           </p>
 
-          <h2 className="mt-6 text-7xl font-black leading-[0.9] tracking-tight">
+          <h2 className="mt-6 text-4xl sm:text-6xl lg:text-7xl font-black leading-[0.9] tracking-tight">
             Products I've
             <br />
             <span className="bg-[linear-gradient(90deg,#a78bfa,#f472b6,#fb923c)] bg-clip-text text-transparent">Designed & Engineered.</span>
@@ -245,10 +245,10 @@ export default function Products() {
               className="group border-t border-white/10 py-16 transition-all duration-500 hover:bg-white/[0.02]"
             >
 
-              <div className="grid grid-cols-[90px_1fr_auto] gap-12">
+              <div className="grid grid-cols-1 md:grid-cols-[90px_1fr_auto] gap-6 md:gap-12">
 
                 <div>
-                  <span className="text-5xl font-black text-neutral-800 transition duration-500 group-hover:text-fuchsia-400">
+                  <span className="text-3xl sm:text-4xl lg:text-5xl font-black text-neutral-800 transition duration-500 group-hover:text-fuchsia-400">
                     {project.number}
                   </span>
                 </div>
@@ -259,7 +259,7 @@ export default function Products() {
                     <Link href={project.caseStudyUrl}>
                       <motion.h3
                         whileHover={{ x: 8 }}
-                        className="cursor-pointer text-5xl font-bold tracking-tight transition hover:text-fuchsia-300"
+                        className="cursor-pointer text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight transition hover:text-fuchsia-300"
                       >
                         {project.title}
                       </motion.h3>
@@ -267,7 +267,7 @@ export default function Products() {
                   ) : (
                     <motion.h3
                       whileHover={{ x: 8 }}
-                      className="text-5xl font-bold tracking-tight"
+                      className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight"
                     >
                       {project.title}
                     </motion.h3>
@@ -322,7 +322,7 @@ export default function Products() {
 
                 </div>
 
-                <div className="flex flex-col items-end justify-between">
+                <div className="flex flex-col items-start md:items-end justify-between">
 
                   {project.caseStudyUrl ? (
 

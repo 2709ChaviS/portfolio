@@ -10,7 +10,7 @@ export default function CaregiveCaseStudy() {
 
       <section className="relative overflow-hidden border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 pt-40 pb-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 pt-32 md:pt-40 pb-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -24,7 +24,7 @@ export default function CaregiveCaseStudy() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: .7 }}
-            className="mt-8 text-[110px] font-black leading-[0.88] tracking-tight"
+            className="mt-8 text-[44px] sm:text-[80px] lg:text-[110px] font-black leading-[0.88] tracking-tight"
           >
             Caregive
           </motion.h1>
@@ -33,7 +33,7 @@ export default function CaregiveCaseStudy() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: .7, delay: .1 }}
-            className="mt-3 max-w-5xl text-5xl font-semibold leading-tight text-neutral-300"
+            className="mt-3 max-w-5xl text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-neutral-300"
           >
             Designing trust into
             <br />
@@ -77,7 +77,7 @@ export default function CaregiveCaseStudy() {
             <a
               href="https://github.com/2709ChaviS/caregive"
               target="_blank"
-              className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
+              className="rounded-xl border border-white/10 px-5 sm:px-8 py-4 transition hover:bg-white/5"
             >
               GitHub
             </a>
@@ -85,12 +85,12 @@ export default function CaregiveCaseStudy() {
             <a
               href="https://caregive.vercel.app/landing"
               target="_blank"
-              className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
+              className="rounded-xl border border-white/10 px-5 sm:px-8 py-4 transition hover:bg-white/5"
             >
               Live demo 
             </a>
 
-            <div className="rounded-xl border border-white/10 px-8 py-4 text-neutral-500">
+            <div className="rounded-xl border border-white/10 px-5 sm:px-8 py-4 text-neutral-500">
               
             </div>
 
@@ -104,7 +104,7 @@ export default function CaregiveCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -120,7 +120,7 @@ export default function CaregiveCaseStudy() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="mt-8 max-w-5xl text-6xl font-black leading-[0.95]"
+            className="mt-8 max-w-5xl text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]"
           >
             Finding a caregiver is fragmented.
             <br />
@@ -154,7 +154,7 @@ export default function CaregiveCaseStudy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.08 }}
-                className="rounded-3xl border border-white/10 bg-white/[0.02] p-10"
+                className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 md:p-10"
               >
                 <p className="text-sm uppercase tracking-[0.3em] text-neutral-600">
                   0{index + 1}
@@ -180,7 +180,7 @@ export default function CaregiveCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -191,7 +191,7 @@ export default function CaregiveCaseStudy() {
             PRODUCT VISION
           </motion.p>
 
-          <h2 className="mt-8 max-w-5xl text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 max-w-5xl text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             One platform,
             <br />
             two synchronized roles.
@@ -213,12 +213,12 @@ export default function CaregiveCaseStudy() {
               "Real-time Status",
             ].map((item, index) => (
               <div key={item} className="flex items-center gap-6">
-                <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-8 py-6 text-xl font-medium">
+                <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-5 sm:px-8 py-6 text-xl font-medium">
                   {item}
                 </div>
 
                 {index !== 3 && (
-                  <span className="text-3xl text-neutral-700">→</span>
+                  <span className="text-xl sm:text-2xl lg:text-3xl text-neutral-700">→</span>
                 )}
               </div>
             ))}
@@ -233,7 +233,7 @@ export default function CaregiveCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -248,7 +248,7 @@ export default function CaregiveCaseStudy() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-8 text-6xl font-black leading-[0.95]"
+            className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]"
           >
             The workflow.
           </motion.h2>
@@ -266,14 +266,14 @@ export default function CaregiveCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-20 px-8 py-28">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 px-5 sm:px-8 py-28">
 
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-neutral-600">
               STEP 01
             </p>
 
-            <h3 className="mt-6 text-5xl font-bold">
+            <h3 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold">
               Caregiver Discovery
             </h3>
 
@@ -285,7 +285,7 @@ export default function CaregiveCaseStudy() {
             </p>
           </div>
 
-          <div className="rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-12">
+          <div className="rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-6 md:p-12">
             <div className="space-y-5">
               <div className="rounded-xl bg-white/5 p-5">Caregiver Name</div>
               <div className="rounded-xl bg-white/5 p-5">Experience</div>
@@ -302,14 +302,14 @@ export default function CaregiveCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-20 px-8 py-28">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 px-5 sm:px-8 py-28">
 
           <div className="order-2">
             <p className="text-sm uppercase tracking-[0.3em] text-neutral-600">
               STEP 02
             </p>
 
-            <h3 className="mt-6 text-5xl font-bold">
+            <h3 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold">
               Booking Request
             </h3>
 
@@ -320,7 +320,7 @@ export default function CaregiveCaseStudy() {
             </p>
           </div>
 
-          <div className="order-1 rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-12">
+          <div className="order-1 rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-6 md:p-12">
             <div className="space-y-4">
               <div className="rounded-xl border border-white/10 p-5">Care Type</div>
               <div className="rounded-xl border border-white/10 p-5">Date & Time</div>
@@ -336,14 +336,14 @@ export default function CaregiveCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-20 px-8 py-28">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 px-5 sm:px-8 py-28">
 
           <div>
             <p className="text-sm uppercase tracking-[0.3em] text-neutral-600">
               STEP 03
             </p>
 
-            <h3 className="mt-6 text-5xl font-bold">
+            <h3 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold">
               Sequential Task Pipeline
             </h3>
 
@@ -354,7 +354,7 @@ export default function CaregiveCaseStudy() {
             </p>
           </div>
 
-          <div className="rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-10">
+          <div className="rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-6 md:p-10">
             <div className="space-y-6">
               <div className="flex items-center justify-between rounded-xl bg-white/5 p-5">
                 <span>Check-in</span>
@@ -379,14 +379,14 @@ export default function CaregiveCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto grid max-w-7xl grid-cols-2 gap-20 px-8 py-28">
+        <div className="mx-auto grid max-w-7xl grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 px-5 sm:px-8 py-28">
 
           <div className="order-2">
             <p className="text-sm uppercase tracking-[0.3em] text-neutral-600">
               STEP 04
             </p>
 
-            <h3 className="mt-6 text-5xl font-bold">
+            <h3 className="mt-6 text-3xl sm:text-4xl lg:text-5xl font-bold">
               Real-time Visibility
             </h3>
 
@@ -397,7 +397,7 @@ export default function CaregiveCaseStudy() {
             </p>
           </div>
 
-          <div className="order-1 rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-12">
+          <div className="order-1 rounded-[32px] border border-white/10 bg-gradient-to-br from-neutral-900 to-black p-6 md:p-12">
             <div className="rounded-2xl border border-green-500/20 bg-green-500/10 p-8">
               <p className="text-xl font-semibold">Live Status</p>
               <p className="mt-4 text-neutral-400">Care Activity — In Progress</p>
@@ -416,7 +416,7 @@ export default function CaregiveCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -427,7 +427,7 @@ export default function CaregiveCaseStudy() {
             TECHNICAL ARCHITECTURE
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             One backend,
             <br />
             two synchronized views.
@@ -458,7 +458,7 @@ export default function CaregiveCaseStudy() {
             ].map((item) => (
               <div
                 key={item.title}
-                className="rounded-3xl border border-white/10 bg-white/[0.02] p-10"
+                className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 md:p-10"
               >
                 <h3 className="text-2xl font-semibold">{item.title}</h3>
                 <p className="mt-6 leading-9 text-neutral-400">{item.body}</p>
@@ -475,7 +475,7 @@ export default function CaregiveCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -486,13 +486,13 @@ export default function CaregiveCaseStudy() {
             REFLECTION
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             What this project is teaching me.
           </h2>
 
           <div className="mt-20 grid gap-8 md:grid-cols-3">
 
-            <div className="rounded-3xl border border-white/10 p-10">
+            <div className="rounded-3xl border border-white/10 p-6 md:p-10">
               <h3 className="text-2xl font-semibold">Dual-Role Design</h3>
               <p className="mt-6 leading-9 text-neutral-400">
                 Designing two different roles on one shared data model forces
@@ -500,7 +500,7 @@ export default function CaregiveCaseStudy() {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-white/10 p-10">
+            <div className="rounded-3xl border border-white/10 p-6 md:p-10">
               <h3 className="text-2xl font-semibold">Research-Driven UX</h3>
               <p className="mt-6 leading-9 text-neutral-400">
                 Talking through what parents and caregivers actually want
@@ -508,7 +508,7 @@ export default function CaregiveCaseStudy() {
               </p>
             </div>
 
-            <div className="rounded-3xl border border-white/10 p-10">
+            <div className="rounded-3xl border border-white/10 p-6 md:p-10">
               <h3 className="text-2xl font-semibold">Building in the Open</h3>
               <p className="mt-6 leading-9 text-neutral-400">
                 Shipping this case study while the build is still in progress
@@ -527,7 +527,7 @@ export default function CaregiveCaseStudy() {
 
       <section className="border-b border-white/10">
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.p
             initial={{ opacity: 0 }}
@@ -538,7 +538,7 @@ export default function CaregiveCaseStudy() {
             TECHNOLOGY
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black">Built with.</h2>
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black">Built with.</h2>
 
           <div className="mt-20 flex flex-wrap gap-5">
 
@@ -569,13 +569,13 @@ export default function CaregiveCaseStudy() {
 
       <section>
 
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
 
           <motion.h2
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            className="max-w-5xl text-7xl font-black leading-[0.9]"
+            className="max-w-5xl text-4xl sm:text-6xl lg:text-7xl font-black leading-[0.9]"
           >
             Still building.
             <br />
@@ -593,14 +593,14 @@ export default function CaregiveCaseStudy() {
             <a
               href="https://github.com/2709ChaviS/caregive"
               target="_blank"
-              className="rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:scale-105"
+              className="rounded-xl bg-white px-5 sm:px-8 py-4 font-semibold text-black transition hover:scale-105"
             >
               View Source Code
             </a>
 
             <a
               href="/"
-              className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
+              className="rounded-xl border border-white/10 px-5 sm:px-8 py-4 transition hover:bg-white/5"
             >
               Back to Home
             </a>
@@ -613,7 +613,7 @@ export default function CaregiveCaseStudy() {
 
       {/* FOOTER / CLOSING SECTION */}
 
-      <section className="relative overflow-hidden py-32 px-6">
+      <section className="relative overflow-hidden py-20 md:py-32 px-6">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
 
         <div className="relative mx-auto max-w-5xl text-center">
@@ -623,7 +623,7 @@ export default function CaregiveCaseStudy() {
             In active development · Next.js · Supabase · TypeScript
           </div>
 
-          <h2 className="text-4xl font-semibold tracking-tight sm:text-6xl">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight sm:text-6xl">
             Built for parents who want
             <br />
             <span className="bg-gradient-to-r from-primary via-purple-500 to-pink-500 bg-clip-text text-transparent">

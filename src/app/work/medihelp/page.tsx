@@ -57,7 +57,7 @@ export default function MedihelpCaseStudy() {
 
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 pt-40 pb-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 pt-32 md:pt-40 pb-32">
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -70,7 +70,7 @@ export default function MedihelpCaseStudy() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="mt-8 text-[100px] font-black leading-[0.88] tracking-tight"
+            className="mt-8 text-[44px] sm:text-[80px] lg:text-[100px] font-black leading-[0.88] tracking-tight"
           >
             Medihelp
           </motion.h1>
@@ -79,7 +79,7 @@ export default function MedihelpCaseStudy() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="mt-3 max-w-4xl text-5xl font-semibold leading-tight text-neutral-300"
+            className="mt-3 max-w-4xl text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-neutral-300"
           >
             Simplifying healthcare
             <br />
@@ -113,7 +113,7 @@ export default function MedihelpCaseStudy() {
               href="https://www.figma.com/design/pO4XprScn25pNwrmmg4VAS/Medihelp?node-id=0-1&t=IpyFlifNBySpRrHx-1"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
+              className="inline-flex items-center gap-3 rounded-xl border border-white/10 px-5 sm:px-8 py-4 transition hover:bg-white/5"
             >
               View Figma Prototype →
             </a>
@@ -123,7 +123,7 @@ export default function MedihelpCaseStudy() {
 
       {/* PROBLEM */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -137,7 +137,7 @@ export default function MedihelpCaseStudy() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mt-8 max-w-5xl text-6xl font-black leading-[0.95]"
+            className="mt-8 max-w-5xl text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]"
           >
             Booking care shouldn't
             <br />
@@ -155,7 +155,7 @@ export default function MedihelpCaseStudy() {
 
       {/* RESEARCH */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -165,7 +165,7 @@ export default function MedihelpCaseStudy() {
             RESEARCH
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             Competitive UX research.
           </h2>
 
@@ -188,7 +188,7 @@ export default function MedihelpCaseStudy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
-                className="rounded-3xl border border-white/10 bg-white/[0.02] p-10"
+                className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 md:p-10"
               >
                 <h3 className="text-2xl font-semibold">{item.title}</h3>
                 <p className="mt-4 leading-8 text-neutral-400">{item.body}</p>
@@ -200,7 +200,7 @@ export default function MedihelpCaseStudy() {
 
       {/* CORE APP SCREENS */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -210,7 +210,7 @@ export default function MedihelpCaseStudy() {
             CORE APP SCREENS
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             Everything a patient needs,
             <br />
             one tab away.
@@ -228,7 +228,7 @@ export default function MedihelpCaseStudy() {
 
       {/* BOOKING FLOW */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -238,7 +238,7 @@ export default function MedihelpCaseStudy() {
             BOOKING FLOW
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             From slot to confirmed,
             <br />
             in four screens.
@@ -256,7 +256,7 @@ export default function MedihelpCaseStudy() {
 
       {/* DESIGN SYSTEM */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -266,7 +266,7 @@ export default function MedihelpCaseStudy() {
             DESIGN SYSTEM
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             Built once, reused everywhere.
           </h2>
 
@@ -288,7 +288,7 @@ export default function MedihelpCaseStudy() {
 
       {/* REFLECTION */}
       <section>
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -298,7 +298,7 @@ export default function MedihelpCaseStudy() {
             REFLECTION
           </motion.p>
 
-          <h2 className="mt-8 text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             What this project taught me.
           </h2>
 
@@ -313,11 +313,11 @@ export default function MedihelpCaseStudy() {
               href="https://www.figma.com/design/pO4XprScn25pNwrmmg4VAS/Medihelp?node-id=0-1&t=IpyFlifNBySpRrHx-1"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:scale-105"
+              className="rounded-xl bg-white px-5 sm:px-8 py-4 font-semibold text-black transition hover:scale-105"
             >
               View Figma Prototype
             </a>
-            <a href="/" className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5">
+            <a href="/" className="rounded-xl border border-white/10 px-5 sm:px-8 py-4 transition hover:bg-white/5">
               Back to Home
             </a>
           </div>

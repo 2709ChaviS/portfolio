@@ -63,7 +63,7 @@ export default function CollabDocsCaseStudy() {
 
       {/* HERO */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 pt-40 pb-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 pt-32 md:pt-40 pb-32">
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -76,7 +76,7 @@ export default function CollabDocsCaseStudy() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="mt-8 text-[110px] font-black leading-[0.88] tracking-tight"
+            className="mt-8 text-[44px] sm:text-[80px] lg:text-[110px] font-black leading-[0.88] tracking-tight"
           >
             CollabDocs
           </motion.h1>
@@ -85,7 +85,7 @@ export default function CollabDocsCaseStudy() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1 }}
-            className="mt-3 max-w-4xl text-5xl font-semibold leading-tight text-neutral-300"
+            className="mt-3 max-w-4xl text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-neutral-300"
           >
             Real-time collaborative writing,
             <br />
@@ -119,7 +119,7 @@ export default function CollabDocsCaseStudy() {
               href={LIVE}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:scale-105"
+              className="rounded-xl bg-white px-5 sm:px-8 py-4 font-semibold text-black transition hover:scale-105"
             >
               Live Demo
             </a>
@@ -127,7 +127,7 @@ export default function CollabDocsCaseStudy() {
               href={GITHUB}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
+              className="rounded-xl border border-white/10 px-5 sm:px-8 py-4 transition hover:bg-white/5"
             >
               GitHub
             </a>
@@ -137,12 +137,12 @@ export default function CollabDocsCaseStudy() {
 
       {/* PROBLEM */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <p className="text-xs uppercase tracking-[0.45em] text-neutral-500">
             THE PROBLEM
           </p>
 
-          <h2 className="mt-8 max-w-5xl text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 max-w-5xl text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             Two people typing at once
             <br />
             shouldn&apos;t mean
@@ -161,12 +161,12 @@ export default function CollabDocsCaseStudy() {
 
       {/* WHAT IT DOES */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <p className="text-xs uppercase tracking-[0.45em] text-neutral-500">
             WHAT I BUILT
           </p>
 
-          <h2 className="mt-8 text-6xl font-black">Core capabilities.</h2>
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black">Core capabilities.</h2>
 
           <div className="mt-20 grid gap-8 md:grid-cols-2">
             {features.map((item, i) => (
@@ -176,9 +176,9 @@ export default function CollabDocsCaseStudy() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
-                className="rounded-3xl border border-white/10 bg-white/[0.02] p-10"
+                className="rounded-3xl border border-white/10 bg-white/[0.02] p-6 md:p-10"
               >
-                <h3 className="text-3xl font-semibold">{item.title}</h3>
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold">{item.title}</h3>
                 <p className="mt-5 text-lg leading-9 text-neutral-400">
                   {item.body}
                 </p>
@@ -190,12 +190,12 @@ export default function CollabDocsCaseStudy() {
 
       {/* ARCHITECTURE */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <p className="text-xs uppercase tracking-[0.45em] text-neutral-500">
             ARCHITECTURE
           </p>
 
-          <h2 className="mt-8 max-w-5xl text-6xl font-black leading-[0.95]">
+          <h2 className="mt-8 max-w-5xl text-3xl sm:text-5xl lg:text-6xl font-black leading-[0.95]">
             Frontend and sync engine,
             <br />
             fully decoupled.
@@ -214,13 +214,13 @@ export default function CollabDocsCaseStudy() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="flex gap-10 rounded-3xl border border-white/10 bg-white/[0.02] p-10"
+                className="flex flex-col md:flex-row gap-4 md:gap-10 rounded-3xl border border-white/10 bg-white/[0.02] p-6 md:p-10"
               >
-                <span className="text-5xl font-black text-neutral-700">
+                <span className="text-3xl sm:text-4xl lg:text-5xl font-black text-neutral-700">
                   0{i + 1}
                 </span>
                 <div>
-                  <h3 className="text-3xl font-semibold">{item.title}</h3>
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-semibold">{item.title}</h3>
                   <p className="mt-5 max-w-3xl text-lg leading-9 text-neutral-400">
                     {item.body}
                   </p>
@@ -233,12 +233,12 @@ export default function CollabDocsCaseStudy() {
 
       {/* LIMITATIONS */}
       <section className="border-b border-white/10">
-        <div className="mx-auto max-w-7xl px-8 py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
           <p className="text-xs uppercase tracking-[0.45em] text-neutral-500">
             KNOWN LIMITATIONS
           </p>
 
-          <h2 className="mt-8 text-6xl font-black">What I&apos;d improve next.</h2>
+          <h2 className="mt-8 text-3xl sm:text-5xl lg:text-6xl font-black">What I&apos;d improve next.</h2>
 
           <div className="mt-16 grid gap-4">
             {limitations.map((point) => (
@@ -256,8 +256,8 @@ export default function CollabDocsCaseStudy() {
 
       {/* CLOSING */}
       <section>
-        <div className="mx-auto max-w-7xl px-8 py-32">
-          <h2 className="max-w-5xl text-7xl font-black leading-[0.9]">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 py-20 md:py-32">
+          <h2 className="max-w-5xl text-4xl sm:text-6xl lg:text-7xl font-black leading-[0.9]">
             Real-time is a
             <br />
             systems problem,
@@ -270,7 +270,7 @@ export default function CollabDocsCaseStudy() {
               href={LIVE}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl bg-white px-8 py-4 font-semibold text-black transition hover:scale-105"
+              className="rounded-xl bg-white px-5 sm:px-8 py-4 font-semibold text-black transition hover:scale-105"
             >
               Live Demo
             </a>
@@ -278,13 +278,13 @@ export default function CollabDocsCaseStudy() {
               href={GITHUB}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
+              className="rounded-xl border border-white/10 px-5 sm:px-8 py-4 transition hover:bg-white/5"
             >
               View Source Code
             </a>
             <a
               href="/"
-              className="rounded-xl border border-white/10 px-8 py-4 transition hover:bg-white/5"
+              className="rounded-xl border border-white/10 px-5 sm:px-8 py-4 transition hover:bg-white/5"
             >
               Back to Home
             </a>
