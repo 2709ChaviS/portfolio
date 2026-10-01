@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import GradientBlobs from "../ui/GradientBlobs";
 
 const projects = [
   {
@@ -200,9 +201,10 @@ export default function Products() {
   return (
     <section
       id="work"
-      className="relative bg-[#050505] py-40 text-white"
+      className="relative overflow-hidden bg-[#050505] py-40 text-white"
     >
-      <div className="mx-auto max-w-7xl px-8">
+      <GradientBlobs count={6} />
+      <div className="relative z-10 mx-auto max-w-7xl px-8">
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -217,7 +219,7 @@ export default function Products() {
           <h2 className="mt-6 text-7xl font-black leading-[0.9] tracking-tight">
             Products I've
             <br />
-            Designed & Engineered.
+            <span className="bg-[linear-gradient(90deg,#a78bfa,#f472b6,#fb923c)] bg-clip-text text-transparent">Designed & Engineered.</span>
           </h2>
 
           <p className="mt-8 max-w-2xl text-xl leading-9 text-neutral-400">
@@ -240,13 +242,13 @@ export default function Products() {
                 duration: 0.6,
                 delay: index * 0.08,
               }}
-              className="group border-t border-white/10 py-16 transition-all duration-500"
+              className="group border-t border-white/10 py-16 transition-all duration-500 hover:bg-white/[0.02]"
             >
 
               <div className="grid grid-cols-[90px_1fr_auto] gap-12">
 
                 <div>
-                  <span className="text-5xl font-black text-neutral-800 transition duration-500 group-hover:text-white">
+                  <span className="text-5xl font-black text-neutral-800 transition duration-500 group-hover:text-fuchsia-400">
                     {project.number}
                   </span>
                 </div>
@@ -257,7 +259,7 @@ export default function Products() {
                     <Link href={project.caseStudyUrl}>
                       <motion.h3
                         whileHover={{ x: 8 }}
-                        className="cursor-pointer text-5xl font-bold tracking-tight transition hover:text-neutral-200"
+                        className="cursor-pointer text-5xl font-bold tracking-tight transition hover:text-fuchsia-300"
                       >
                         {project.title}
                       </motion.h3>
@@ -296,7 +298,7 @@ export default function Products() {
                     {project.stack.map((item) => (
                       <span
                         key={item}
-                        className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-neutral-300 transition group-hover:border-white/20"
+                        className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-2 text-sm text-neutral-300 transition group-hover:border-fuchsia-400/50 group-hover:bg-fuchsia-400/10"
                       >
                         {item}
                       </span>

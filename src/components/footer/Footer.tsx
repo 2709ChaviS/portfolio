@@ -1,12 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import GradientBlobs from "../ui/GradientBlobs";
 
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden border-t border-white/10 bg-[#050505] py-32 text-white">
 
-      <div className="mx-auto max-w-7xl px-8">
+      <GradientBlobs count={3} />
+      <div className="relative z-10 mx-auto max-w-7xl px-8">
 
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -25,7 +27,7 @@ export default function Footer() {
             <br />
             people actually
             <br />
-            enjoy using.
+            <span className="bg-[linear-gradient(90deg,#a78bfa,#f472b6,#fb923c)] bg-clip-text text-transparent">enjoy using.</span>
 
           </h2>
 
@@ -49,7 +51,7 @@ export default function Footer() {
 
             <a
               href="mailto:chavisharma977@gmail.com"
-              className="block text-3xl font-semibold transition hover:text-neutral-300"
+              className="block text-3xl font-semibold transition hover:text-fuchsia-300"
             >
               chavisharma977@gmail.com
             </a>
@@ -61,7 +63,7 @@ export default function Footer() {
             <a
               href="https://www.linkedin.com/in/chavi-sharma-923232256/"
               target="_blank"
-              className="text-2xl transition hover:text-neutral-300"
+              className="text-2xl transition hover:text-fuchsia-300"
             >
               LinkedIn →
             </a>
@@ -69,7 +71,7 @@ export default function Footer() {
             <a
               href="https://github.com/2709ChaviS"
               target="_blank"
-              className="text-2xl transition hover:text-neutral-300"
+              className="text-2xl transition hover:text-fuchsia-300"
             >
               GitHub →
             </a>
@@ -77,7 +79,7 @@ export default function Footer() {
             <a
               href="https://drive.google.com/file/d/17a-1dP4QhVoTmiqBAAMyDkqAhVyQGCpQ/view?usp=sharing"
               target="_blank"
-              className="text-2xl transition hover:text-neutral-300"
+              className="text-2xl transition hover:text-fuchsia-300"
             >
               Resume →
             </a>
